@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>afterclass 1</title>
+</head>
+<body>
+    <!-- Pasar a codigo (a un documento html) nuestro Mockup.
+    Debemos identificar las diferentes partes del proyecto que se encuentran dentro de la etiqueta <body>, como por ejemplo el encabezado, las secciones
+    que van dentro de la etiqueta <main></main>, el footer. Primero dedemos definir las secciones grandes del sitio web. Recordar que
+    HTML funciona como cajas (cajas que contienen cajas). -->
+    <!-- La etiqueta article no debe contener otra etiqueta article. -->
+    <!-- HTML funciona como una mamushka o como una caja. Dentro de HTML hay dos cajas principales: head y body. Dentro de body se crean mas
+    cajas: header, main, footer. Dentro de header podemos tener la "caja" nav y la caja img, dentro de la caja main las
+    cajas seccion que a su vez dentro de estas puede haber una caja de texto y otra caja que contenga una imagen.
+    EL ANALISIS DE HTML SIEMPRE ES DE IZQUIERDA A DERECHA Y DE ARRIBA HACIA ABAJO. De esta manera se van incorporando los elementos al HTML. -->
+    <!-- En segundo lugar podemos identificar/definir las cajas secundarias como por ejemplo los articulos e imagenes (los cuales se puede decir que conforman
+    bloques de codigos separados, es decir, diferentes etiquetas) -->
+    <!-- Por ejemplo: podemos tener dentro de la etiqueta header:   -->
+    <!-- 
+        <header>
+            <img src="logo.com" alt="">
+            <nav>
+                <ul>
+                    <li>inicio</li>
+                    <li>inicio</li>
+                    <li>inicio</li>
+                    <li>inicio</li>
+                </ul>
+                <button></button>
+                <ul>
+                    <li>youtube</li>
+                    <li>youtube</li>
+                    <li>youtube</li>
+                </ul>
+                [boton search (no recuerdo la etiqueta :(]
+            </nav>
+        </header>
+    -->
+    <!-- Como me doy cuenta de como se conforma el header o la etiqueta nav? Prestando atencion a los espacios que hay entre los elementos. -->
+    <!-- Para estar mejor ubicados siempre se debe clasificar y desglosar el wireframe o mockup -->
+    <header>
+        <!-- Si el sitio tiene un logo que es un enlace lo podemos hacer de la siguiente manera: -->
+        <!-- Al ser una imagen con enlace utilizamos la etiqueta a con una etiqueta img -->
+        <a href=""><img src="" alt=""></a>
+        <!-- si fuera texto unicamente utilizamos la etiqueta a -->
+        <a href="">NEREBRO Studio</a>
+        <!-- Los demas elementos que van dentro de la etiqueta nav (la barra de navegacion, botones, redes 
+        sociales, caja de busqueda) los podemos contener dentro de una etiqueta <div></div>. La etiqueta div es una etiqueta contenedora generica 
+        la cual solamente agrupa informacion.-->
+        <!-- Dentro de la etiqueta header es raro encontrar una etiqueta <section></section> -->
+        <div>
+            <nav>
+                <ul>
+                    <li><a href="">inicio</a></li>
+                    <li><a href="">productos</a></li>
+                    <li><a href="">servicios</a></li>
+                    <li><a href="">nosotros</a></li>
+                    <li><a href="">blog</a></li>
+                </ul>
+            </nav>
+            <button>eng / esp</button>
+            <ul>
+                <li><a href=""><img src="" alt="x"></a></li>
+                <li><a href=""><img src="" alt="instagram"></a></li>
+                <li><a href=""><img src="" alt="youtube"></a></li>
+            </ul>
+            <form action="">
+                <label for="">Buscar</label>
+                <input type="search" placeholder="Buscar">
+            </form>
+    <main>
+        <section>
+            <!-- Si es informacion importante utilizamos la etiqueta article. Si no es informacion importante y queremos agrupar informacion podemos utilizar la 
+            etiqueta div.-->
+            <div>
+                <h1>Titulo del sitio web</h1>
+                <div>
+                    <a href=""><img src="./assets/img/play-button-4205.svg" alt=""></a>
+                    <p>Reproducir el video</p> 
+                    <!-- La etiqueta p es en bloque. La etiqueta span es en linea-->
+                </div>
+                <div>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div>
+                <p>small text</p>
+                <h2>Nuestros servicios</h2>
+            </div>
+            <section>
+                <article>
+                    <img src="" alt="">
+                    <h3>Demolicion</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                    <a href="">Leer mas =></a>
+                </article>
+                <article>
+                    <img src="" alt="">
+                    <h3>Construccion</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                    <a href="">Leer mas =></a>
+                </article>
+                <article>
+                    <img src="" alt="">
+                    <h3>Diseño de Interiores </h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                    <a href="">Leer mas =></a>
+                </article>
+            </section>
+        </section>
+    </main>
+            <hr>
+            <p>FORMULARIOS:</p>
+            <!-- El elemento "search", es decir la barra de busqueda, forma parte de los formularios -->
+            <!-- FORMULARIOS: -->
+            <!-- Hay que ser muy meticuloso a la hora de crear formularios. Tienen que enfocarse unicamente en lo necesario y tienen que ser consisos.
+            Los formularios se crean con la etiqueta <form> -->
+                <form action="">
+                <!-- al atributo action no lo vamos a utilizar por ahora porque lo debemos enlazar con una base de datos que 
+                requiere el conocimiento de otros lenguajes de programacion de backend, como por ejemplo php -->
+                <!-- Las etiquetas label e input trabajan en conjunto y sinergia -->
+                <!-- la etiqueta label es la que recibe el tipo de informacion. La etiqueta input es en la cual se ingresa la 
+                informacion, por ejemplo puede crear un campo de texto en el caso de una barra de busqueda modificando el atributo "type". -->
+                <!-- SI QUEREMOS QUE UN CAMPO SEA OBLIGATORIO UTILIZAMOS EL ATRIBUTO REQUIRED dentro de la etiqueta input -->
+                    <label for="buscador">buscador</label>
+                    <input type="search" name="buscador" id="buscador" placeholder="Buscar">
+                    <!-- Para que label e input se comuniquen deben llevar la misma palabra clave -->
+                    <!-- la etiqueta input siempre lleva el atributo "name" e "id". name e id tienen que ser iguales -->
+                    <!-- El atributo name le da nombre a la informacion que se va a guardar y el atributo id se comunica con el atributo "for" de la etiqueta label.  -->
+                    <!-- La etiqueta input recibe la informacion, se la entrega a la etiqueta label y la etiqueta label envia la informacion a backend -->
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
+                    <label for="contraseña">Contraseña</label>
+                    <input type="password" name="contraseña" id="contraseña" placeholder="Contraseña" required>
+                    <!-- Si queremos que dentro del campo de texto se lea una leyenda utilizamos el atributo placeholder dentro de la etiqueta input -->
+                    <!-- Existen diferentes tipos de input como por ejemplo: search, text, password, radio,  -->
+                    <div>
+                        <p>indique el talle</p>
+                        <label for="s">S</label>
+                        <input type="radio" name="talle" id="s">
+                        <label for="m">M</label>
+                        <input type="radio" name="talle" id="m">
+                        <label for="l">L</label>
+                        <input type="radio" name="talle" id="l">
+                        <label for="xl">XL</label>
+                        <input type="radio" name="talle" id="xl">
+                        <!-- Para que los input funcionen en conjunto deben tener el mismo valor en el atributo name -->
+                        <!-- Se recomienda buscar en MDN Mozilla mas informacion acerca de formularios -->
+                    </div>
+                    <!-- Con la etiqueta select se pueden generar menus del tipo dropdown -->
+                    <select name="" id="">
+                        <option value="">javascript</option>
+                        <option value="">desarrollo</option>
+                        <option value="">react</option>
+                    </select>
+                    <!-- Existe un tipo de input especial: submit -->
+                    <!-- Este sirve para enviar informacion directamente -->
+                    <input type="submit" name="" id="" value="ENVIAAAAAR">
+                    <!-- Para cambiar el nombre del boton submit utilizamos el atributo "value" -->
+                </form>
+        </div>
+    </header>
+</body>
+</html>
